@@ -1,0 +1,156 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+--text-span-color:#E1624F;
+--text-h2-color:#1B1B1B;
+--text-p-color:#333333;
+--color-li-history:#0C51A7;
+--accent-purple:#591B98;
+--accent-pink:#E5245E;
+  
+}
+
+
+body {
+  display: grid;
+  place-items: center;
+
+  background-color: #F5F4F0;
+  margin: 88px 80px 48px 80px;
+  width: 100%;
+
+  counter-increment: item 0;
+  font-family: 'Open Sans';
+}
+
+main {
+  max-width: 1200px;
+}
+
+#title-page h4 {
+  color: var(--text-span-color);
+  font-size: 16px;
+  font-weight: 700;
+  gap: 8px;
+ 
+}
+
+#tilte-page h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color:#1B1B1B;
+}
+
+img {
+  border-radius: 28px;
+  width: 100%;
+}
+#description img {
+  padding-top: 40px;
+  padding-bottom: 24px;
+}
+
+#description p {
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  gap: 40px;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  margin: 36px 0;
+  background-color: #d9d9d9;
+}
+#title-card h4 {
+  color: var(--text-span-color);
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  margin-top: 64px;
+}
+
+#title-card h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-h2-color);
+  margin-bottom: 6px;
+
+}
+
+p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-p-color);
+}
+
+#content-card1 img {
+  margin-top: 64px;
+  margin-bottom: 20px;
+}
+
+
+.number {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-h2-color);
+  margin-bottom: 4px;
+  margin-top: 20px;
+}
+
+ol li {
+  padding-left: 15px;
+}
+
+ol li.number {
+  list-style: none;
+  counter-increment: item;
+}
+
+ol li.number::before {
+  content: counter(item) ". ";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+
+.all, .history-blue {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-p-color);
+}
+
+.history-blue {
+  color: var(--color-li-history);
+  margin-bottom: 48px;
+}
+
+ul {
+  padding-left: 24px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+#purple {
+  color: var(--accent-purple);
+}
+
+#red {
+color: var(--accent-pink);
+}
+
+#orange {
+  color: var(--text-span-color);
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  color: var(--text-p-color);
+}
