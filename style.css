@@ -20,7 +20,7 @@ body {
   place-items: center;
 
   background-color: #F5F4F0;
-  margin: 88px 80px 48px 80px;
+  
   width: 100%;
 
   counter-increment: item 0;
@@ -28,7 +28,10 @@ body {
 }
 
 main {
-  max-width: 1200px;
+  width: 1120px;
+  height: 1120px;
+  margin: 88px 80px 48px 80px ;
+  
 }
 
 #title-page h4 {
@@ -39,19 +42,26 @@ main {
  
 }
 
-#tilte-page h1 {
+h1 {
   font-size: 36px;
   font-weight: 700;
   color:#1B1B1B;
+  padding-bottom: 24px;
 }
 
-img {
+#cidade-block {
+  height: 640px;
+  display: block;
   border-radius: 28px;
-  width: 100%;
+  object-fit: cover;
+ 
 }
-#description img {
-  padding-top: 40px;
-  padding-bottom: 24px;
+
+.tourist {
+  border-radius: 28px;
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
 }
 
 #description p {
@@ -59,6 +69,7 @@ img {
   font-size: 16px;
   font-style: italic;
   font-weight: 400;
+  padding-top: 40px;
   gap: 40px;
 }
 
@@ -149,8 +160,24 @@ color: var(--accent-pink);
   color: var(--text-span-color);
 }
 
-footer {
+#explanation{
   margin-top: 40px;
   text-align: center;
   color: var(--text-p-color);
+  margin-bottom: 65px;
+
+  font-size: 16px;
+  font-weight: 400;
+
 }
+
+footer {
+  text-align: center;
+  padding-bottom: 48px;
+  color: var(--text-p-color);
+}
+
+footer img {
+  vertical-align: middle;
+}
+
